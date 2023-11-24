@@ -9,7 +9,6 @@ Library     RPA.Tables
 Consume items
     [Documentation]    Login and then cycle through work items.
     TRY
-        Login
         For Each Input Work Item    Handle item
     EXCEPT    AS    ${err}
         Log    ${err}    level=ERROR
